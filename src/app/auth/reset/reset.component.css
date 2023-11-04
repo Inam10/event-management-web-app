@@ -1,0 +1,28 @@
+.panelbody {
+    background: #ff7a2d;
+}
+
+.row {
+
+    min-height: 100vh;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 150px;
+}
+
+.container {
+    /* background-color: black; */
+    border-radius: 10px;
+
+}
+
+.panel {
+    height: 400px;
+    width: 400px;
+}
+
+.panel-body {
+    background-color: rgb(245, 86, 28);
+    height: 50%px;
+    border-radius: 10px;
+}

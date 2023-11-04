@@ -1,0 +1,148 @@
+/* .card{.
+    background-color: rgb(245, 86, 28);
+}
+.mb-md-5 {
+    margin-bottom: -1rem!important;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    height: 500px;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: rgb(rgb(19, 3, 3), rgb(3, 19, 3), rgb(4, 4, 34));
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(224, 76, 22);
+    height: 550px;
+    /* align-items: center; */
+    justify-content: start;
+    color: white;
+    border-radius: 20px;
+
+
+}
+
+.hed {
+    margin-top: 3px;
+    margin-bottom: -19px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.para {
+    margin: 40px;
+    align-items: center;
+
+}
+
+h2 {
+    font-size: 3rem;
+
+}
+
+h5 {
+    font-size: 2rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: -20px;
+}
+
+.box {
+    padding: 12px;
+    width: 65%;
+    margin: auto;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+}
+
+.btn {
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    width: 65%;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 0 0px 0 80px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+@media (min-width: 768px) {
+    .btn {
+        padding: 1rem 2rem;
+    }
+}
+
+.form a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.form a:hover {
+    cursor: pointer;
+    color: #fd4e4e;
+}
+
+.sub-heading {
+    margin-left: 35px;
+    margin-top: 10px;
+
+}
+
+#forlink {
+
+
+    margin-left: 85px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+
+}
+
+.last {
+    padding-bottom: 40px;
+    margin-left: 80px;
+    margin-top: 20px;
+    color: white;
+}
+
+.validation {
+    margin-left: 80px;
+    margin-bottom: 9px;
+    margin-top: -30px;
+}
