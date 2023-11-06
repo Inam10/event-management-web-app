@@ -20,7 +20,6 @@ export class LoginComponent {
 
   loginuser(item : any){
     console.log(item);
-    
   }
 
 }

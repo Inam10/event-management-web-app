@@ -1,78 +1,76 @@
-/* .card{.
-    background-color: rgb(245, 86, 28);
-}
-.mb-md-5 {
-    margin-bottom: -1rem!important;
-} */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: white;
+    color: white;
 }
 
 .container {
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 400px;
     height: 500px;
-    width: 450px;
-    border: 1px solid black;
-    border-radius: 20px;
-    margin: auto;
+    margin: 0 auto;
+    border: 2px solid black;
     margin-top: 50px;
-    box-shadow: rgb(rgb(19, 3, 3), rgb(3, 19, 3), rgb(4, 4, 34));
+    background-color: rgb(245, 86, 28);
+    border-radius: 20px;
+
+}
+
+h4 {
+    font-size: 25px;
+    color: white;
+    align-items: start;
+    margin-top: 40px;
+    /* margin-left: -150px; */
+
+}
+
+.sub-heading {
+    text-align: start;
+    /* margin-left: -175px; */
+    margin-top: 15px;
 }
 
 .form {
+    width: 300px;
+    height: inherit;
+    margin-top: 50px;
+
+}
+
+.name {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: rgb(224, 76, 22);
-    height: 550px;
-    /* align-items: center; */
-    justify-content: start;
-    color: white;
-    border-radius: 20px;
-
-
-}
-
-.hed {
-    margin-top: 3px;
-    margin-bottom: -19px;
     font-size: 20px;
-    font-weight: bold;
-    margin-left: 80px;
+    margin-bottom: 20px;
 }
 
-.para {
-    margin: 40px;
-    align-items: center;
-
-}
-
-h2 {
-    font-size: 3rem;
-
-}
-
-h5 {
-    font-size: 2rem;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: -20px;
+.radio {
+    margin-bottom: 20px;
 }
 
 .box {
-    padding: 12px;
-    width: 65%;
-    margin: auto;
-    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
     outline: none;
-    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.validation {
+    color: red;
+    font-size: 15px;
+}
+
+.forgot {
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -85,13 +83,12 @@ h5 {
     justify-content: center;
     padding: 1rem 1.75rem;
     text-decoration: none;
-    width: 65%;
+    width: 100%;
     border: 0;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    margin: 0 0px 0 80px;
 }
 
 .btn:hover {
@@ -104,45 +101,7 @@ h5 {
     }
 }
 
-.form a {
-    text-decoration: none;
-    color: black;
-
-
-}
-
-.form a:hover {
-    cursor: pointer;
-    color: #fd4e4e;
-}
-
-.sub-heading {
-    margin-left: 35px;
-    margin-top: 10px;
-
-}
-
-#forlink {
-
-
-    margin-left: 85px;
-    margin-bottom: 35px;
-    margin-right: 20px;
-    color: white;
-    font-weight: 100;
-    cursor: pointer;
-
-}
-
 .last {
-    padding-bottom: 40px;
-    margin-left: 80px;
-    margin-top: 20px;
-    color: white;
-}
-
-.validation {
-    margin-left: 80px;
-    margin-bottom: 9px;
-    margin-top: -30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }

@@ -9,32 +9,40 @@
 
 <body>
     <div class="container">
+        <div class="heading">
+            <h4>LOGIN</h4>
+        </div>
+        <div class="sub-heading">
+            <P>Enter your email and password</P>
+        </div>
 
-        <form action="" class="form" #loginform="ngForm" (ngSubmit)="loginuser(loginform.value)">
-            <div class="para">
-                <h5>LOGIN </h5>
-                <p class="sub-heading"> Please enter your login and password</p>
-            </div>
+        <div class="form">
+            <form #loginform="ngForm" (ngSubmit)="loginuser(loginform.value)">
 
 
-            <label for="Mail" class="hed"> Email</label>
-            <input type="email" name="email" class="box" placeholder="Enter your email" ngModel required
-                #email="ngModel" email>
-            <span class="validation" *ngIf="email.invalid && email.touched " style="color: red;">invalid
-                email</span>
+                <div class="name">
+                    <input type="text" name="email" class="box" placeholder="Enter your email" #email="ngModel" ngModel
+                        required email>
+                    <span class="validation" *ngIf="email.invalid && email.touched">invalid
+                        email</span>
+                </div>
 
-            <label for="password" class="hed"> Password</label>
-            <input type="PassWord" name="password" class="box" placeholder=" PassWord" ngModel required
-                #password="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-            <span class="validation" *ngIf="password.invalid && password.touched" style="color: red;">invalid
-                password</span>
-            <p id="forlink" (click)="gotoreset()">Forget Password?</p>
-            <input type="submit" value="Sign in" id="submit" class="btn" ngModel>
+                <div class="name">
+                    <input type="password" name="password" class="box" placeholder="Enter your password"
+                        #password="ngModel" ngModel required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <span class="validation" *ngIf="password.invalid && password.touched">invalid password</span>
+                </div>
+                <div class="forgot">
+                    <u (click)="gotoreset()">Forget Password?</u>
+
+                </div>
+
+                <input type="submit" name="" class="btn" value="Sign Up" ngModel>
+            </form>
             <div class="last">
-                <p>Don't have an account? <span id="uplink" (click)="gotosignup()">signup</span></p>
+                <p>I have an account <u (click)="gotosignup()">Sign up</u></p>
             </div>
-
-        </form>
+        </div>
     </div>
 </body>
 
