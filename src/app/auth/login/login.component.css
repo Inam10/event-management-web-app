@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
 }
 
 .container {
@@ -16,7 +15,7 @@
     margin: 0 auto;
     border: 2px solid black;
     margin-top: 50px;
-    background-color: rgb(245, 86, 28);
+    background-color: #ed4a43;
     border-radius: 20px;
 
 }
@@ -31,6 +30,7 @@ h4 {
 }
 
 .sub-heading {
+    color: white;
     text-align: start;
     /* margin-left: -175px; */
     margin-top: 15px;
@@ -69,6 +69,7 @@ h4 {
 }
 
 .forgot {
+    color: white;
     font-size: 15px;
     margin-bottom: 20px;
 }
@@ -102,6 +103,7 @@ h4 {
 }
 
 .last {
+    color: white;
     margin-top: 10px;
     margin-bottom: 15px;
 }

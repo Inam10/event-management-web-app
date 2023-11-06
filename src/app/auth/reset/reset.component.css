@@ -1,7 +1,3 @@
-.panelbody {
-    background: #ff7a2d;
-}
-
 .row {
 
     min-height: 100vh;
@@ -12,17 +8,28 @@
 
 .container {
     /* background-color: black; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
 }
 
 .panel {
-    height: 400px;
-    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* height: 400px; */
+    /* width: 400px; */
 }
 
 .panel-body {
-    background-color: rgb(245, 86, 28);
-    height: 50%px;
+    /* border: 1px solid black; */
+    background-color: #ed4a43;
+    /* height: 50%px; */
     border-radius: 10px;
+}
+
+.textdeco {
+    color: white;
+}
+
+.inputsec {
+    border: 1px solid black;
 }
