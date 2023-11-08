@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  constructor( private router : Router){}
+  constructor( private router : Router , private userlogin : UserService ){}
 
   gotoreset(){
     this.router.navigate(['/reset'])
@@ -18,8 +19,10 @@ export class LoginComponent {
     this.router.navigate(['/signup']);
   };
 
-  loginuser(item : any){
-    console.log(item);
+  loginuser(data : any){
+    this.userlogin.loginusers(data).subscribe((result)=>{
+      console.log(data);
+    })
   }
 
 }
