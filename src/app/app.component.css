@@ -1,62 +1,47 @@
-nav {
-    display: flex;
-    justify-content: space-between;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     width: 100%;
-    background: #eee;
+    height: 100%;
+
 }
 
-.logo {
-    background-color: #eee;
-    margin-left: 20px;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.slideimg {
+    position: relative;
+    margin-top: -50px;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slideBackground 10s linear infinite;
 }
 
+@keyframes slideBackground {
+    0% {
+        background-image: url('./Images/img1.jpg');
+    }
+
+    25% {
+        background-image: url('./Images/img2.jpg');
+    }
+
+    50% {
+        background-image: url('./Images/img3.jpg');
+    }
+
+    75% {
+        background-image: url('./Images/img4.jpg');
+    }
+
+    100% {
+        background-image: url('./Images/img5.jpg');
+    }
+}
 
 a {
     display: none;
-}
-
-.options {
-    margin: 20px;
-    display: flex;
-
-    gap: 10px;
-}
-
-
-.btn {
-    background: #ed4a43;
-    border: 1px solid #ed4a43;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 16px;
-    min-height: 40px;
-    outline: 0;
-    padding: 12px 14px;
-    text-align: center;
-    text-rendering: geometricprecision;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-}
-
-.btn:hover,
-.btn:active {
-    background-color: initial;
-    background-position: 0 0;
-    color: #ed4a43;
-}
-
-.btn:active {
-    opacity: .5;
 }

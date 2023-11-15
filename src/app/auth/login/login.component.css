@@ -4,17 +4,34 @@
     box-sizing: border-box;
 }
 
-.container {
+body {
+    height: 100%;
+    width: 100%;
+}
 
+.whole {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100vh;
+
+}
+
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     width: 400px;
     height: 500px;
-    margin: 0 auto;
+    margin: auto;
     border: 2px solid black;
-    margin-top: 100px;
+    /* margin-top: 50px;
+    margin-bottom: 60px; */
     background-color: #ed4a43;
     border-radius: 20px;
 

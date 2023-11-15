@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
+import { HttpClient } from '@angular/common/http';
+ 
 
 @Component({
   selector: 'app-signup',
@@ -9,17 +11,28 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class SignupComponent {
 
-  constructor(private router : Router , private signup : UserService){}
+  userData = {
+    fullName: '',
+    email: '',
+    phone:'',
+    password: '',
+    confimPassword: ''
+  };
+
+  constructor(private router : Router , private userService : UserService){}
 
   gotoLogin(){
     this.router.navigate(['/login'])
   }
-  singupuser(data :any){
-    console.log("result:" )
-    this.signup.signupusers(data).subscribe((result)=>{
-      console.log(data);
-      
-    })
+  singupuser(userData : any)  {
+    this.userService.signupusers(userData).subscribe(
+      response =>{
+        console.log('signup successfull', response);
+      },
+      error =>{
+        console.log('signup failed' , error);
+      }
+    )
     
   }
 

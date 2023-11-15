@@ -1,91 +1,92 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
-.fullContent {
-    height: 100%;
-    width: 100%;
+.whole {
+
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     margin-top: 50px;
     height: 100vh;
 
 }
 
-
 .container {
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    /* max-width: 200px; */
-    /* Adjust the maximum width as needed */
-    margin: auto;
+    justify-content: start;
+    width: 350px;
+    height: 300px;
+    /* margin: 0 auto; */
     border: 2px solid black;
-    margin-top: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     background-color: #ed4a43;
     border-radius: 20px;
-    /* margin-bottom: 30px; */
-    padding: 20px;
-    /* Add some padding for better spacing */
 }
 
-h3 {
-    color: white;
+h4 {
     font-size: 25px;
-    margin-top: 20px;
+    color: #eee;
+    align-items: start;
+    margin-top: 40px;
+    /* margin-left: -150px; */
+
 }
 
 .sub-heading {
     color: white;
-    margin-top: 5px;
+    text-align: start;
+    /* margin-left: -175px; */
+    margin-top: 15px;
 }
 
 .form {
-    width: 70%;
-    /* Take the full width of the container */
-    margin-top: 20px;
+    width: 300px;
+    height: inherit;
+    margin-top: 50px;
+
 }
 
 .name {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .radio {
     margin-bottom: 20px;
-    row-gap: 1px;
-}
-
-#check-tick {
-    margin-right: 5px;
-    margin-top: 10px;
 }
 
 .box {
     color: black;
     padding: 10px;
     margin-top: 5px;
-    margin-bottom: 5px;
     border-radius: 6px;
     outline: none;
     border: 2px solid black;
-    width: 100%;
-    /* Take the full width of the container */
 }
 
-.conditon {
-    margin-top: -20px;
+.validation {
+    color: red;
+    font-size: 15px;
 }
 
-.btn-p {
-    margin-top: 20px;
+.forgot {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -93,7 +94,9 @@ h3 {
     border-radius: .5rem;
     box-sizing: border-box;
     color: #FFFFFF;
+    display: flex;
     font-size: 16px;
+    justify-content: center;
     padding: 1rem 1.75rem;
     text-decoration: none;
     width: 100%;
@@ -109,11 +112,6 @@ h3 {
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 426px;
-        /* Adjust the maximum width for larger screens */
-    }
-
     .btn {
         padding: 1rem 2rem;
     }
@@ -121,23 +119,10 @@ h3 {
 
 .last {
     color: white;
-    font-size: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
-.validation {
-    color: red;
-}
-
-.condition1 {
-    color: white;
-    margin-bottom: -10px;
-    margin-top: -25px;
-}
-
-.checkbox {
-    height: 15px;
-    width: 15px;
-    border-radius: 15px;
-}
+/* body {
+    background-color: white;
+} */

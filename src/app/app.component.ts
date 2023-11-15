@@ -9,17 +9,5 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'event-management-web-app';
 
-  constructor(private router : Router){}
-
-  gotoLogin(){
-    this.router.navigate(['/login']);
-  }
-
-  gotosignup(){
-    this.router.navigate(['/signup']);
-  }
-  gotoHome(){
-    this.router.navigate(['/'])
-  }
-
+ 
 }

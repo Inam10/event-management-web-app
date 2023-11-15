@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reset Password</title>
+    <title>Login Form</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
 <body>
+   <div class="fullContent">
     <div class="container">
-        <form class="reset-form">
-            <h2>Reset Password</h2>
-            <div class="form-group">
+        <div class="heading">
+            <h4>Reset Password</h4>
+        </div>
 
-                <input type="email" id="email" name="email" placeholder="Email">
-            </div>
-            <div class="form-group">
+        <div class="form">
+            <form>
+                <div class="name">
+                    <input type="text" name="email" class="box" placeholder="Enter your email" #email="ngModel" ngModel
+                        required email>
+                    <span class="validation" *ngIf="email.invalid && email.touched">invalid
+                        email</span>
+                </div>
 
-                <input type="password" id="password" name="password" placeholder="Password">
-            </div>
-            <div class="form-group">
+                <div class="name">
+                    <input type="text" name="confirmEmail" class="box" placeholder="Confirm email"
+                        #confirmEmail="ngModel" ngModel required email>
+                    <span class="validation" *ngIf="email.value !== confirmEmail.value && confirmEmail.dirty">Email not
+                        matched</span>
+                </div>
 
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm-password">
-            </div>
-            <button type="submit">Reset Password</button>
-        </form>
+                <input type="submit" name="" class="btn" value="Send Mail" ngModel>
+            </form>
+
+        </div>
     </div>
+   </div>
+
+
 </body>
 
 </html>

@@ -6,17 +6,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
+  loginusers(data: any) {
+    throw new Error('Method not implemented.');
+  }
 
-  loginUrl = 'http:localhost:3000/users/signin'
-  singnupUrl = 'http:localhost:3000/users/signup'
+private  singnupUrl = 'http://localhost:3000/users/signup'
 
   constructor(private http : HttpClient) { }
 
- loginusers(data :any){
-      return this.http.post(this.loginUrl , data)
- }
- signupusers(data: any): Observable<any> {
-    return this.http.post('http://localhost:3000/users/signup', data)
+
+ signupusers(userData: any): Observable<any> {
+    return this.http.post(this.singnupUrl, userData)
   }
 
 }

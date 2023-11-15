@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -9,20 +10,31 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class LoginComponent {
 
-  constructor( private router : Router , private userlogin : UserService ){}
+  userData = {
+    email: '',
+    password: ''
+  };
 
-  gotoreset(){
-    this.router.navigate(['/reset'])
+  constructor( private router : Router , private authService : AuthService ){}
+
+  gotoforgot(){
+    this.router.navigate(['/forgot'])
   }
 
   gotosignup(){
     this.router.navigate(['/signup']);
   };
 
-  loginuser(data : any){
-    this.userlogin.loginusers(data).subscribe((result)=>{
-      console.log(data);
-    })
+  login(): void {
+    this.authService.login(this.userData)
+      .subscribe(
+        response => {
+          console.log('Login successful!', response);
+        },
+        error => {
+          console.error('Login failed!', error);
+        }
+      );
   }
 
 }

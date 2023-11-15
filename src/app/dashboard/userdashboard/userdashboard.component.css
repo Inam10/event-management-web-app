@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.whole {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+
+.dashboard {
+    width: 80%;
+    max-width: 1200px;
+    /* Set a maximum width for larger screens */
+    margin: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+table th {
+    background: #f2f2f2;
+}
+
+table td {
+    text-align: center;
+}
+
+select {
+    padding: 5px;
+}
+
+input[type="checkbox"] {
+    margin: 0 auto;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: #66BB6A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background: #ed4a43;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .dashboard {
+        width: 90%;
+        /* Adjust width for smaller screens */
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        /* Adjust font size for smaller screens */
+    }
+
+    /* Add more responsive styles as needed */
+}
+
+/* Additional media queries for other screen sizes */
