@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-content: center;
     margin-top: 50px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     height: 100vh;
 }
 
@@ -21,7 +21,7 @@ body {
     background: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 h1 {

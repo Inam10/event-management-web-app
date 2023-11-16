@@ -16,11 +16,9 @@ export class ForgetComponent {
       .subscribe(
         response => {
           console.log('Reset link sent!', response);
-          // Display a success message or navigate to another page
         },
         error => {
           console.error('Failed to send reset link!', error);
-          // Show error message to the user
         }
       );
   }
