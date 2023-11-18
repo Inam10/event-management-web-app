@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './user/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ResetComponent } from './auth/reset/reset.component';
-import { ForgetComponent } from './auth/forget/forget.component';
+import { ForgetComponent } from './auth/forot/forgot.component';
 import { UserdashboardComponent } from './dashboard/userdashboard/userdashboard.component';
 
 const routes: Routes = [

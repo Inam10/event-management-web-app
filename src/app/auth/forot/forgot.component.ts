@@ -3,8 +3,8 @@ import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-forget',
-  templateUrl: './forget.component.html',
-  styleUrls: ['./forget.component.css']
+  templateUrl: './forgot.component.html',
+  styleUrls: ['./forgot.component.css']
 })
 export class ForgetComponent {
 
@@ -17,9 +17,9 @@ export class ForgetComponent {
         response => {
           console.log('Reset link sent!', response);
         },
-        error => {
-          console.error('Failed to send reset link!', error);
-        }
+        // error => {
+        //   console.error('Failed to send reset link!', error);
+        // }
       );
   }
 
