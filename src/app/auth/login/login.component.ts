@@ -25,16 +25,18 @@ export class LoginComponent {
     this.router.navigate(['/signup']);
   };
 
-  login(): void {
-    this.authService.login(this.userData)
-      .subscribe(
-        response => {
-          console.log('Login successful!', response);
-        },
-        error => {
-          console.error('Login failed!', error);
-        }
-      );
+  login(data: any) {
+    this.authService.login(data).subscribe(
+      (response) => {
+        console.log('Authentication result:', response);
+        this.router.navigate(['/dashboard']);
+
+
+
+        
+      }
+     
+    );
   }
 
 }

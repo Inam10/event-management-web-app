@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private  apiUrlLogIn = 'https:localhost:3000/users/signin'
+  private  apiUrlLogIn = 'http://localhost:3000/users/signin'
   private apiUrlForgot = '';
 
 

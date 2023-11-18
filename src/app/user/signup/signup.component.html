@@ -49,10 +49,10 @@
                     </div>
 
                     <div class="name">
-                        <input type="password" name="confimPassword" class="box" placeholder="Confirm password"
-                            [(ngModel)]="userData.confimPassword" #confimPassword="ngModel" required>
+                        <input type="password" name="confirmPassword" class="box" placeholder="Confirm password"
+                            [(ngModel)]="userData.confirmPassword" #confirmPassword="ngModel" required>
                         <span class=" validation"
-                            *ngIf="password.value !== confimPassword.value && confimPassword.dirty">Password do not
+                            *ngIf="password.value !== confirmPassword.value && confirmPassword.dirty">Password do not
                             match.</span>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ export class SignupComponent {
     email: '',
     phone:'',
     password: '',
-    confimPassword: ''
+    confirmPassword: ''
   };
 
   constructor(private router : Router , private userService : UserService){}
@@ -28,6 +28,8 @@ export class SignupComponent {
     this.userService.signupusers(userData).subscribe(
       response =>{
         console.log('signup successfull', response);
+        this.router.navigate(['/dashboard']);
+
       },
       error =>{
         console.log('signup failed' , error);
