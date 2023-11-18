@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
   constructor(private router : Router){}
 
   gotoLogin(){
@@ -20,6 +19,4 @@ export class NavbarComponent {
   gotoHome(){
     this.router.navigate(['/'])
   }
-
-
 }

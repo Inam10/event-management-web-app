@@ -6,8 +6,9 @@ import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { NavModule } from './nav/nav.module';
 import { UserService } from './services/user.service';
+import { MainModule } from './main/main.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UserService } from './services/user.service';
     AuthModule,
     UserModule,
     DashboardModule,
-    NavModule
+    MainModule,
+    HomeModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
