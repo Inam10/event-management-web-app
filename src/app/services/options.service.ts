@@ -8,11 +8,17 @@ import { Observable } from 'rxjs';
 export class OptionsService {
 
 
-  private  addEventUrl = 'localhost:3000/events/addEvents'
+  private  addEventUrl = 'http://localhost:3000/events/addEvent'
+  private  addDeleteEventUrl = 'http://localhost:3000/events/deleteEvent'
+
 
   constructor(private http : HttpClient) { }
 
   addEvent(eventData: any): Observable<any> {
     return this.http.post(this.addEventUrl, eventData)
+  }
+
+  deleteEvent(eventId: any): Observable<any> {
+    return this.http.delete(`${this.addDeleteEventUrl}/${eventId}`);
   }
 }
