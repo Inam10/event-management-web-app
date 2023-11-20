@@ -13,9 +13,9 @@
             <div class="heading">
                 <h3>SIGN UP</h3>
             </div>
-            <div class="sub-heading">
+            <!-- <div class="sub-heading">
                 <P>Please register here</P>
-            </div>
+            </div> -->
 
 
             <form class="form" #signupform="ngForm" (ngSubmit)="singupuser(signupform.value)">
@@ -59,13 +59,13 @@
 
                 <div class="condition1">
                     <input type="checkbox" name="" id="" class="checkbox">
-                    <label for="" class="conditon">I agree for all terms and conditions</label>
+                    <span for="" class="conditon">I agree for all terms and conditions</span>
                 </div>
                 <div class="btn-p">
                     <input type="submit" name="" class="btn" value="Sign Up" ngModel>
                 </div>
                 <div class="last">
-                    <p>I have an account <u (click)="gotoLogin()" class="move">Log in</u></p>
+                    <p>I have an account <span (click)="gotoLogin()" class="move">Sign in</span></p>
                 </div>
             </form>
 

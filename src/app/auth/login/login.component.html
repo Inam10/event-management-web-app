@@ -11,11 +11,11 @@
     <div class="whole">
         <div class="container">
             <div class="heading">
-                <h4>LOGIN</h4>
+                <h4>SIGN IN</h4>
             </div>
-            <div class="sub-heading">
+            <!-- <div class="sub-heading">
                 <P>Enter your email and password</P>
-            </div>
+            </div> -->
 
             <div class="form">
                 <form #loginform="ngForm" (ngSubmit)="login(userData)">
@@ -42,7 +42,7 @@
                     <input type="submit" name="" class="btn" value="Log in" ngModel>
                 </form>
                 <div class="last">
-                    <p>I have an account <u class="clickable" (click)="gotosignup()">Sign up</u></p>
+                    <p>I have an account <span class="clickable" (click)="gotosignup()">Sign up</span></p>
                 </div>
             </div>
         </div>

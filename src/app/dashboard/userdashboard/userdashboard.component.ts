@@ -16,7 +16,7 @@ export class UserdashboardComponent {
     this.eventDeleteService.deleteEvent(userData).subscribe(
       response =>{
         console.log('delete Event successfully', response);
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/data/dashboard']);
 
       },
       error =>{
@@ -24,6 +24,10 @@ export class UserdashboardComponent {
       }
     )
     
+  }
+
+  gotoDashboard(){
+    this.router.navigate(['/options/book-event'])
   }
 
 }
