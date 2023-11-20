@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
   constructor(private router : Router){}
 
-  gotoLogin(){
-    this.router.navigate(['auth/login']);
+  goToAbout(){
+    this.router.navigate(['/about']);
   }
 
-  gotosignup(){
-    this.router.navigate(['user/signup']);
-  }
+  // gotosignup(){
+  //   this.router.navigate(['user/signup']);
+  // }
   gotoHome(){
     this.router.navigate(['/'])
   }

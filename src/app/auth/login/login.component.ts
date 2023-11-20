@@ -22,7 +22,7 @@ export class LoginComponent {
   }
 
   gotosignup(){
-    this.router.navigate(['auth/signup']);
+    this.router.navigate(['user/signup']);
   };
 
   login(data: any) {

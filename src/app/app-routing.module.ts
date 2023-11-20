@@ -7,6 +7,7 @@ import { ForgetComponent } from './auth/forgot/forgot.component';
 import { UserdashboardComponent } from './dashboard/userdashboard/userdashboard.component';
 import { HomeSectionComponent } from './main/home-section/home-section.component';
 import { BookEventComponent } from './options/book-event/book-event.component';
+import { AboutComponent } from './home/about/about.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component : UserdashboardComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   }
 ];
 
