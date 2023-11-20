@@ -35,14 +35,14 @@
                         <span class="validation" *ngIf="password.invalid && password.touched">invalid password</span>
                     </div>
                     <div class="forgot">
-                        <u (click)="gotoforgot()">Forget Password?</u>
+                        <u class="clickable" (click)="gotoforgot()">Forget Password?</u>
 
                     </div>
 
                     <input type="submit" name="" class="btn" value="Log in" ngModel>
                 </form>
                 <div class="last">
-                    <p>I have an account <u (click)="gotosignup()">Sign up</u></p>
+                    <p>I have an account <u class="clickable" (click)="gotosignup()">Sign up</u></p>
                 </div>
             </div>
         </div>

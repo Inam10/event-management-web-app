@@ -6,6 +6,7 @@ import { ResetComponent } from './auth/reset/reset.component';
 import { ForgetComponent } from './auth/forgot/forgot.component';
 import { UserdashboardComponent } from './dashboard/userdashboard/userdashboard.component';
 import { HomeSectionComponent } from './main/home-section/home-section.component';
+import { BookEventComponent } from './options/book-event/book-event.component';
 
 const routes: Routes = [
   {
@@ -13,20 +14,24 @@ const routes: Routes = [
     component: HomeSectionComponent
   },
   {
-    path: 'signup',
+    path: 'user/signup',
     component : SignupComponent
   },
   {
-    path: 'login',
+    path: 'auth/login',
     component : LoginComponent
   },
   {
-    path : 'reset',
+    path : 'auth/reset',
     component: ResetComponent
   },
   {
-    path : 'forgot',
+    path : 'auth/forgot',
     component : ForgetComponent
+  },
+  {
+    path : 'options/book-event',
+    component : BookEventComponent
   },
   {
     path: 'dashboard',

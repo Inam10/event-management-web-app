@@ -9,6 +9,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { UserService } from './services/user.service';
 import { MainModule } from './main/main.module';
 import { HomeModule } from './home/home.module';
+import { OptionsModule } from './options/options.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeModule } from './home/home.module';
     UserModule,
     DashboardModule,
     MainModule,
-    HomeModule
+    HomeModule,
+    OptionsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

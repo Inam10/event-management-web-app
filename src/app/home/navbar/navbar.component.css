@@ -1,32 +1,63 @@
 nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    background: #eee;
+    align-items: center;
+    /* width: 100%; */
+    background: linear-gradient(to right, #f5f5f5, #ddd);
+    padding: 8px 20px;
+    /* Adjusted padding */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    background-color: #eee;
-    margin-left: 20px;
+    background: linear-gradient(to right, #ed4a43, #ff7043);
+    color: #fff;
+    margin-left: 10px;
+    /* Adjusted margin */
     font-size: 30px;
+    /* Adjusted font size */
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 6px 10px;
+    /* Adjusted padding */
+    border-radius: 30px;
+    transition: background 0.3s ease;
 }
 
-
-a {
-    display: none;
+.logo:hover {
+    background: linear-gradient(to right, #ff7043, #ed4a43);
 }
 
 .options {
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
     gap: 10px;
 }
 
+.options li {
+    margin: 0;
+}
+
+.options a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 6px 8px;
+    /* Adjusted padding */
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.options a:hover {
+    background: #ed4a43;
+    color: #fff;
+}
+
 
 .btn {
-    background: #ed4a43;
-    border: 1px solid #ed4a43;
+    background: #FF4742;
+    border: 1px solid #FF4742;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
@@ -53,7 +84,7 @@ a {
 .btn:active {
     background-color: initial;
     background-position: 0 0;
-    color: #ed4a43;
+    color: #FF4742;
 }
 
 .btn:active {

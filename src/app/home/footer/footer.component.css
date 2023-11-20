@@ -2,6 +2,7 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 40px 0;
+    /* margin-top: 60%; */
 }
 
 .footer-content {
@@ -35,6 +36,14 @@ footer {
 .footer-links ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+
+}
+
+.footer-links ul li a:hover {
+    color: #FF5733;
+    /* Change color on hover to accent color */
 }
 
 .footer-contact h4 {
@@ -49,13 +58,15 @@ footer {
 .logo {
     font-family: Arial, sans-serif;
     /* Use a suitable font */
-    font-size: 48px;
+    font-size: 36px;
+    /* Adjusted font size */
     /* Adjust the font size */
     color: #FF5733;
     /* Adjust text color */
     text-transform: uppercase;
     /* Uppercase text */
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    /* Adjusted letter spacing */
     /* Adjust letter spacing */
     padding: 10px 20px;
     /* Padding around the text */
@@ -67,4 +78,12 @@ footer {
     /* Center the text */
     width: fit-content;
     /* Adjust width based on content */
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+
+}
+
+.logo:hover {
+    color: #fff;
+    /* Change color on hover to white */
 }

@@ -22,13 +22,13 @@ export class SignupComponent {
   constructor(private router : Router , private userService : UserService){}
 
   gotoLogin(){
-    this.router.navigate(['/login'])
+    this.router.navigate(['auth/login'])
   }
   singupuser(userData : any)  {
     this.userService.signupusers(userData).subscribe(
       response =>{
         console.log('signup successfull', response);
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['options/book-event']);
 
       },
       error =>{

@@ -18,11 +18,11 @@ export class LoginComponent {
   constructor( private router : Router , private authService : AuthService ){}
 
   gotoforgot(){
-    this.router.navigate(['/forgot'])
+    this.router.navigate(['auth/forgot'])
   }
 
   gotosignup(){
-    this.router.navigate(['/signup']);
+    this.router.navigate(['auth/signup']);
   };
 
   login(data: any) {

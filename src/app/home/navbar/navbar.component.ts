@@ -10,11 +10,11 @@ export class NavbarComponent {
   constructor(private router : Router){}
 
   gotoLogin(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['auth/login']);
   }
 
   gotosignup(){
-    this.router.navigate(['/signup']);
+    this.router.navigate(['user/signup']);
   }
   gotoHome(){
     this.router.navigate(['/'])
