@@ -8,6 +8,8 @@ import { UserdashboardComponent } from './dashboard/userdashboard/userdashboard.
 import { HomeSectionComponent } from './main/home-section/home-section.component';
 import { BookEventComponent } from './options/book-event/book-event.component';
 import { AboutComponent } from './home/about/about.component';
+import { GalleryComponent } from './home/gallery/gallery.component';
+import { ContactComponent } from './home/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -41,6 +43,14 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'gallery',
+    component: GalleryComponent
+  },
+  {
+    path: 'contact-us',
+    component: ContactComponent
   }
 ];
 

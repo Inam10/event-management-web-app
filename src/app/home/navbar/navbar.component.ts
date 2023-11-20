@@ -12,10 +12,14 @@ export class NavbarComponent {
   goToAbout(){
     this.router.navigate(['/about']);
   }
+  goToGallery(){
+    this.router.navigate(['/gallery']);
+  }
+  goToContact(){
+    this.router.navigate(['/contact-us'])
+  }
 
-  // gotosignup(){
-  //   this.router.navigate(['user/signup']);
-  // }
+ 
   gotoHome(){
     this.router.navigate(['/'])
   }

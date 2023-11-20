@@ -4,6 +4,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -12,7 +14,9 @@ import { AboutComponent } from './about/about.component';
     NavbarComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    GalleryComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule
@@ -21,7 +25,9 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     HeaderComponent,
     NavbarComponent,
-    AboutComponent
+    AboutComponent,
+    GalleryComponent,
+    ContactComponent
   ]
 })
 export class HomeModule { }
