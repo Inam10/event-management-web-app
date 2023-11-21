@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 import { OptionsService } from 'src/app/services/options.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class UserdashboardComponent {
 
   events = []
 
-  constructor(private eventDeleteService : OptionsService, private router: Router)  {}
+  constructor(private eventDeleteService : OptionsService, private router: Router, private authService: AuthService)  {}
   deleteEvent(userData : any)  {
     this.eventDeleteService.deleteEvent(userData).subscribe(
       response =>{
@@ -30,4 +31,8 @@ export class UserdashboardComponent {
     this.router.navigate(['/options/book-event'])
   }
 
+
+  logout() {
+    this.router.navigate(['auth/signin'])
+}
 }

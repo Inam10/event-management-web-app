@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
                 // Adjust the condition based on your routing logic
-                this.shouldShowNavbar = !event.url.includes('/dashboard');
+                this.shouldShowNavbar = !event.url.includes('dashboard');
             }
         });
     }

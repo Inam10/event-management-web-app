@@ -6,6 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
+  logout() {
+    throw new Error('Method not implemented.');
+  }
 
   private  apiUrlLogIn = 'http://localhost:3000/users/signin'
   private apiUrlForgot = 'http://localhost:3000/users/forgotPassword';
