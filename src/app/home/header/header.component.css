@@ -32,24 +32,24 @@ body {
 
 @keyframes slideBackground {
     0% {
-        background-image: url('./Images/Image1.jpg');
+        background-image: url('./Images/img1-min.webp');
     }
 
 
     25% {
-        background-image: url('./Images/mainImg.jpg');
+        background-image: url('./Images/mainbgImg.webp');
     }
 
     50% {
-        background-image: url('./Images/img3.jpg');
+        background-image: url('./Images/img3-min.webp');
     }
 
     75% {
-        background-image: url('./Images/img4.jpg');
+        background-image: url('./Images/img5.webp');
     }
 
     100% {
-        background-image: url('./Images/img5.jpg');
+        background-image: url('./Images/img6-min.webp');
     }
 }
 

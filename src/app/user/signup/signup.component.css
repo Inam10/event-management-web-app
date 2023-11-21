@@ -14,7 +14,7 @@ body {
     display: flex;
     /* margin-top: 50px; */
     height: 100vh;
-    background-image: url('./Images/Image1.jpg');
+    background-image: url('./Images/mainbgImg.webp');
     background-size: cover;
 }
 
