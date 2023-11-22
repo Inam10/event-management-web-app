@@ -18,6 +18,10 @@ export class AppComponent implements OnInit {
                 // Adjust the condition based on your routing logic
                 this.shouldShowNavbar = !event.url.includes('dashboard');
             }
+            // else if (event instanceof NavigationEnd) {
+            //     // Adjust the condition based on your routing logic
+            //     this.shouldShowNavbar = !event.url.includes('options/book-event');
+            // }
         });
     }
 }

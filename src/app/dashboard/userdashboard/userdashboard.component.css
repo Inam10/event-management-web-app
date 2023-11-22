@@ -10,15 +10,16 @@
 }
 
 :root {
-    --background-color1: #fafaff;
-    --background-color2: #ffffff;
-    --background-color3: #ededed;
-    --background-color4: #cad7fda4;
-    --primary-color: #4b49ac;
-    --secondary-color: #0c007d;
-    --Border-color: #3f0097;
-    --one-use-color: #3f0097;
-    --two-use-color: #5500cb;
+    --background-color1: #f0f0f0; /* Light background color */
+    --background-color2: #ffffff; /* White background color */
+    --background-color3: #e0e0e0; /* Slightly darker background color */
+    --background-color4: #dcdcdc; /* Another background color */
+    --primary-color: #3498db; /* Primary color */
+    --secondary-color: #2c3e50; /* Secondary color */
+    --border-color: #bdc3c7; /* Border color */
+    --one-use-color: #1abc9c; /* Custom color 1 */
+    --two-use-color: #e74c3c; /* Custom color 2 */
+    --text-color: #333333; /* Main text color */
 }
 
 body {
@@ -222,7 +223,7 @@ header {
 .option1 {
     border-left: 5px solid #010058af;
     background-color: var(--Border-color);
-    color: white;
+    color: rgb(16, 16, 16);
     cursor: pointer;
 }
 
@@ -235,7 +236,7 @@ header {
     height: 130px;
     width: 230px;
     border-radius: 20px;
-    box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
+    box-shadow: 3px 3px 10px rgba(153, 115, 94, 0.751);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -269,7 +270,7 @@ header {
 }
 
 .box .text {
-    color: white;
+    color: rgb(15, 15, 15);
 }
 
 .topic {
@@ -564,8 +565,8 @@ header {
 
 
 .button-24 {
-    background: #FF4742;
-    border: 1px solid #FF4742;
+    background:#5500cb;
+    border: 1px solid #5500cb;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
@@ -592,7 +593,7 @@ header {
 .button-24:active {
     background-color: initial;
     background-position: 0 0;
-    color: #FF4742;
+    color: #7442ff;
 }
 
 .button-24:active {
