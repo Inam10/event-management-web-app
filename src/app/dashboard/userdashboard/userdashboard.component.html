@@ -40,14 +40,18 @@
 
     <div class="button-section">
         
-        <div class="btn2"> 
-            <button (click)="gotoAddevent()" class="button-24">Add Event + </button>
-        </div>
+        
     </div>
     <div class="main-container">
         <div class="navcontainer">
             <nav class="nav">
                 <div class="nav-upper-options">
+                    <div class="nav-option logout" (click)="gotoAddevent()">
+                        <img src="../../../assets/icons8-add-event-50.png"
+                            class="nav-img" alt="addEvent">
+                        <h3>Add Event</h3>
+                    </div>
+
                     <div class="nav-option option1">
                         <img src="../../../assets/icons8-dashboard-48.png"
                             class="nav-img" alt="dashboard">
