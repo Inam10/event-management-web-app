@@ -46,17 +46,19 @@
         <div class="navcontainer">
             <nav class="nav">
                 <div class="nav-upper-options">
-                    <div class="nav-option logout" (click)="gotoAddevent()">
-                        <img src="../../../assets/icons8-add-event-50.png"
-                            class="nav-img" alt="addEvent">
-                        <h3>Add Event</h3>
-                    </div>
+                  
 
                     <div class="nav-option option1">
                         <img src="../../../assets/icons8-dashboard-48.png"
                             class="nav-img" alt="dashboard">
                         <h3> Dashboard</h3>
                     </div>
+
+                    <!-- <div class="nav-option logout" (click)="gotoAddevent()">
+                        <img src="../../../assets/icons8-add-event-50.png"
+                            class="nav-img" alt="addEvent">
+                        <h3>Add Event</h3>
+                    </div> -->
 
                     <div class="nav-option option5">
                         <img src="../../../assets/icons8-male-user-50.png"
@@ -89,42 +91,39 @@
 
             <div class="box-container">
                 <div class="box box1">
-                    <div class="text">
-                        <h2 class="topic-heading">60.5k</h2>
-                        <h2 class="topic">Pending Events</h2>
+                    <div class="text" (click)="gotoAddevent()">
+                        <h2 class="topic-heading">Add Event</h2>
                     </div>
 
-                    <!-- <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
-                        alt="Views"> -->
+                    <img src="../../../assets/icons8-add-event-50.png"
+                        alt="Views">
                 </div>
 
                 <div class="box box2">
                     <div class="text">
-                        <h2 class="topic-heading">150</h2>
-                        <h2 class="topic">Event Completed</h2>
+                        <h2 class="topic-heading">Manage Event</h2>
                     </div>
 
-                    <!-- <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes"> -->
+                     <img src="../../../assets/icons8-event-declined-50.png"> 
                 </div>
 
                 <div class="box box3">
-                    <div class="text">
-                        <h2 class="topic-heading">320</h2>
-                        <h2 class="topic">Upcoming Events</h2>
+                    <div class="text" (click)="deleteEvent(userData)">
+                        <h2 class="topic-heading">Delete Event</h2>
                     </div>
 
-                    <!-- <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
-                        alt="comments"> -->
+                     <img src="../../../assets/icons8-delete-50.png"
+                        alt="comments">
                 </div>
             </div>
 
             <div class="report-container">
                 <div class="report-header">
-                    <h1 class="recent-Articles">Recent Articles</h1>
-                    <button class="view">View All</button>
+                    <h1 class="recent-Articles">More Features Coming Soon</h1>
+                    <!-- <button class="view">View All</button> -->
                 </div>
 
-                <div class="report-body">
+                <!-- <div class="report-body">
                     <div class="report-topic-heading">
                         <h3 class="t-op">Article</h3>
                         <h3 class="t-op">Views</h3>
@@ -139,11 +138,8 @@
                             <h3 class="t-op-nextlvl">210</h3>
                             <h3 class="t-op-nextlvl label-tag">Published</h3>
                         </div>
-
-                        <!-- ... More items ... -->
-
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

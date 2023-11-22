@@ -9,7 +9,7 @@ export class OptionsService {
 
 
   private  addEventUrl = 'http://localhost:3000/events/addEvent'
-  private  addDeleteEventUrl = 'http://localhost:3000/events/deleteEvent'
+  private  addDeleteEventUrl = 'http://localhost:3000/events/deleteEvent/'
 
 
   constructor(private http : HttpClient) { }
@@ -18,7 +18,7 @@ export class OptionsService {
     return this.http.post(this.addEventUrl, eventData)
   }
 
-  deleteEvent(eventId: any): Observable<any> {
-    return this.http.delete(`${this.addDeleteEventUrl}/${eventId}`);
+  deleteEvent(id: any): Observable<any> {
+    return this.http.delete(this.addDeleteEventUrl, id);
   }
 }

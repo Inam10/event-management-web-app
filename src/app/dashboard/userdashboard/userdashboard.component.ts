@@ -11,6 +11,7 @@ import { OptionsService } from 'src/app/services/options.service';
 export class UserdashboardComponent {
 
   events = []
+userData: any;
 
   constructor(private eventDeleteService : OptionsService, private router: Router, private authService: AuthService)  {}
   deleteEvent(userData : any)  {

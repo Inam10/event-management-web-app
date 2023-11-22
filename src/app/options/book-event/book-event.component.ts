@@ -27,10 +27,22 @@ export class BookEventComponent {
 
       },
       error =>{
-        console.log('signup failed' , error);
+        console.log('failed' , error);
       }
     )
     
   }
+
+  // deleteEvent(userData : any)  {
+  //   this.eventAddService.deleteEvent(userData).subscribe(
+  //     response =>{
+  //       console.log('delete Event successfully', response);
+  //       this.router.navigate(['/dashboard']);
+
+  //     },
+    
+  //   )
+    
+  // }
 
 }
