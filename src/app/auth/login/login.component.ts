@@ -29,7 +29,7 @@ export class LoginComponent {
     this.authService.login(data).subscribe(
       (response) => {
         console.log('Authentication result:', response);
-        this.router.navigate(['data/dashboard']);
+        this.router.navigate(['/dashboard']);
 
 
 

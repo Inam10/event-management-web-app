@@ -12,7 +12,7 @@
 <body>
 
     <!-- for header part -->
-    /
+
     <!-- <div class="logosec">
             <div class="logo">GeeksForGeeks</div>
             <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
@@ -38,6 +38,14 @@
 
     <!-- </header> -->
 
+    <div class="button-section">
+        <div class="btn1"> 
+            <button (click)="gotoHome()" class="button-24">Back to Home</button>
+        </div>
+        <div class="btn2"> 
+            <button (click)="gotoAddevent()" class="button-24">Add Event + </button>
+        </div>
+    </div>
     <div class="main-container">
         <div class="navcontainer">
             <nav class="nav">
@@ -48,10 +56,10 @@
                         <h3> Dashboard</h3>
                     </div>
 
-                 
 
 
-                   
+
+
 
                     <div class="nav-option option5">
                         <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
@@ -66,10 +74,11 @@
                     </div>
 
                     <div class="nav-option logout" (click)="logout()">
-                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png" class="nav-img" alt="logout">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" alt="logout">
                         <h3>Logout</h3>
                     </div>
-                    
+
 
                 </div>
             </nav>

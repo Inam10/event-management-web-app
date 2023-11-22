@@ -22,7 +22,7 @@ export class SignupComponent {
   constructor(private router : Router , private userService : UserService){}
 
   gotoLogin(){
-    this.router.navigate(['auth/login'])
+    this.router.navigate(['auth/signin'])
   }
   singupuser(userData : any)  {
     this.userService.signupusers(userData).subscribe(

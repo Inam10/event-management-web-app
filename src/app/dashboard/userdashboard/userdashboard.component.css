@@ -368,34 +368,41 @@ header {
     .nav-img {
         height: 25px;
     }
+
     .nav-option {
         gap: 30px;
     }
+
     .nav-option h3 {
         font-size: 15px;
     }
+
     .report-topic-heading,
     .item1,
     .items {
         width: 800px;
     }
-    }
-    
-    @media screen and (max-width: 850px) {
+}
+
+@media screen and (max-width: 850px) {
     .nav-img {
         height: 30px;
     }
+
     .nav-option {
         gap: 30px;
     }
+
     .nav-option h3 {
         font-size: 20px;
     }
+
     .report-topic-heading,
     .item1,
     .items {
         width: 700px;
     }
+
     .navcontainer {
         width: 100vw;
         position: absolute;
@@ -403,25 +410,31 @@ header {
         top: 0;
         left: -100vw;
     }
+
     .nav {
         width: 100%;
         position: absolute;
     }
+
     .navclose {
         left: 00px;
     }
+
     .searchbar {
         display: none;
     }
+
     .main {
         padding: 40px 30px 30px 30px;
     }
+
     .searchbar2 {
         width: 100%;
         display: flex;
         margin: 0 0 40px 0;
         justify-content: center;
     }
+
     .searchbar2 input {
         width: 250px;
         height: 42px;
@@ -431,97 +444,164 @@ header {
         font-size: 15px;
         border: 2px solid var(--secondary-color);
     }
-    }
-    
-    @media screen and (max-width: 490px) {
+}
+
+@media screen and (max-width: 490px) {
     .message {
         display: none;
     }
+
     .logosec {
         width: 100%;
         justify-content: space-between;
     }
+
     .logo {
         font-size: 20px;
     }
+
     .menuicn {
         height: 25px;
     }
+
     .nav-img {
         height: 25px;
     }
+
     .nav-option {
         gap: 25px;
     }
+
     .nav-option h3 {
         font-size: 12px;
     }
+
     .nav-upper-options {
         gap: 15px;
     }
+
     .recent-Articles {
         font-size: 20px;
     }
+
     .report-topic-heading,
     .item1,
     .items {
         width: 550px;
     }
-    }
-    
-    @media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 400px) {
     .recent-Articles {
         font-size: 17px;
     }
+
     .view {
         width: 60px;
         font-size: 10px;
         height: 27px;
     }
+
     .report-header {
         height: 60px;
         padding: 10px 10px 5px 10px;
     }
+
     .searchbtn img {
         height: 20px;
     }
-    }
-    
-    @media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 320px) {
     .recent-Articles {
         font-size: 12px;
     }
+
     .view {
         width: 50px;
         font-size: 8px;
         height: 27px;
     }
+
     .report-header {
         height: 60px;
         padding: 10px 5px 5px 5px;
     }
+
     .t-op {
         font-size: 12px;
     }
+
     .t-op-nextlvl {
         font-size: 10px;
     }
+
     .report-topic-heading,
     .item1,
     .items {
         width: 300px;
     }
+
     .report-body {
         padding: 10px;
     }
+
     .label-tag {
         width: 70px;
     }
+
     .searchbtn {
         width: 40px;
     }
+
     .searchbar2 input {
         width: 180px;
     }
-    }
-    
+}
+
+
+
+
+
+.button-24 {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.button-24:active {
+    opacity: .5;
+}
+
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}

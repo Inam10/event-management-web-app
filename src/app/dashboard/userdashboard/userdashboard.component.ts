@@ -27,10 +27,13 @@ export class UserdashboardComponent {
     
   }
 
-  gotoDashboard(){
+  gotoAddevent(){
     this.router.navigate(['/options/book-event'])
   }
 
+  gotoHome(){
+    this.router.navigate(['/'])
+  }
 
   logout() {
     this.router.navigate(['auth/signin'])

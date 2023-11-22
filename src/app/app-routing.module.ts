@@ -37,7 +37,7 @@ const routes: Routes = [
     component : BookEventComponent
   },
   {
-    path: 'data/dashboard',
+    path: 'dashboard',
     component : UserdashboardComponent
   },
   {
