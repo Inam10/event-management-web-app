@@ -155,3 +155,7 @@ h3 {
 .conditon {
     width: 100%;
 }
+
+.move:hover {
+    color: #000
+}

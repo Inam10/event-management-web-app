@@ -10,20 +10,30 @@
 }
 
 :root {
-    --background-color1: #f0f0f0; /* Light background color */
-    --background-color2: #ffffff; /* White background color */
-    --background-color3: #e0e0e0; /* Slightly darker background color */
-    --background-color4: #dcdcdc; /* Another background color */
-    --primary-color: #3498db; /* Primary color */
-    --secondary-color: #2c3e50; /* Secondary color */
-    --border-color: #bdc3c7; /* Border color */
-    --one-use-color: #1abc9c; /* Custom color 1 */
-    --two-use-color: #e74c3c; /* Custom color 2 */
-    --text-color: #333333; /* Main text color */
+    --background-color1: #f0f0f0;
+    /* Light background color */
+    --background-color2: #ffffff;
+    /* White background color */
+    --background-color3: #e0e0e0;
+    /* Slightly darker background color */
+    --background-color4: #dcdcdc;
+    /* Another background color */
+    --primary-color: #3498db;
+    /* Primary color */
+    --secondary-color: #2c3e50;
+    /* Secondary color */
+    --border-color: #bdc3c7;
+    /* Border color */
+    --one-use-color: #1abc9c;
+    /* Custom color 1 */
+    --two-use-color: #e74c3c;
+    /* Custom color 2 */
+    --text-color: #333333;
+    /* Main text color */
 }
 
 body {
-    background-color: var(--background-color4);
+    background-color: var(--background-color);
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -565,7 +575,7 @@ header {
 
 
 .button-24 {
-    background:#5500cb;
+    background: #5500cb;
     border: 1px solid #5500cb;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;

@@ -18,7 +18,7 @@ userData: any;
     this.eventDeleteService.deleteEvent(userData).subscribe(
       response =>{
         console.log('delete Event successfully', response);
-        this.router.navigate(['/data/dashboard']);
+        this.router.navigate(['dashboard']);
 
       },
       error =>{

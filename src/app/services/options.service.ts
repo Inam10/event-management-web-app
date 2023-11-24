@@ -9,7 +9,7 @@ export class OptionsService {
 
 
   private  addEventUrl = 'http://localhost:3000/events/addEvent'
-  private  addDeleteEventUrl = 'http://localhost:3000/events/deleteEvent/'
+  private  addDeleteEventUrl = 'http://localhost:3000/events/deleteEvent/:id'
 
 
   constructor(private http : HttpClient) { }
