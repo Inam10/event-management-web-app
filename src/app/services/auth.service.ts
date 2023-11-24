@@ -10,7 +10,7 @@ export class AuthService {
     throw new Error('Method not implemented.');
   }
 
-  private  apiUrlLogIn = 'http://localhost:3000/users/signin'
+  private  apiUrlLogIn = 'http://localhost:3000/users/auth/signin'
   private apiUrlForgot = 'http://localhost:3000/users/forgotPassword';
 
 
