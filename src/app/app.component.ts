@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     ngOnInit() {
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
-                this.shouldShowNavbar = !event.url.includes('dashboard') && !event.url.includes('options/book-event');
+                this.shouldShowNavbar = !event.url.includes('dashboard') && !event.url.includes('options/book-event') && !event.url.includes('profile');
             }
            
         });

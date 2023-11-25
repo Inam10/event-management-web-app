@@ -35,6 +35,9 @@ userData: any;
   gotoHome(){
     this.router.navigate(['/'])
   }
+  gotoProfile(){
+    this.router.navigate(['/profile'])
+  }
 
   logout() {
     this.router.navigate(['auth/signin'])

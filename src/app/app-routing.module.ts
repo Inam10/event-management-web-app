@@ -10,6 +10,7 @@ import { BookEventComponent } from './options/book-event/book-event.component';
 import { AboutComponent } from './home/about/about.component';
 import { GalleryComponent } from './home/gallery/gallery.component';
 import { ContactComponent } from './home/contact/contact.component';
+import { ProfileComponent } from './options/profile/profile.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 
