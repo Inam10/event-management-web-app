@@ -10,6 +10,8 @@ import { UserService } from './services/user.service';
 import { MainModule } from './main/main.module';
 import { HomeModule } from './home/home.module';
 import { OptionsModule } from './options/options.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,11 @@ import { OptionsModule } from './options/options.module';
     DashboardModule,
     MainModule,
     HomeModule,
-    OptionsModule
+    OptionsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
+
+    
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
