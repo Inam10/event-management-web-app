@@ -10,8 +10,6 @@ import { UserService } from './services/user.service';
 import { MainModule } from './main/main.module';
 import { HomeModule } from './home/home.module';
 import { OptionsModule } from './options/options.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -27,8 +25,6 @@ import { ToastrModule } from 'ngx-toastr';
     MainModule,
     HomeModule,
     OptionsModule,
-    BrowserAnimationsModule,
-    ToastrModule.forRoot()
 
     
   ],
