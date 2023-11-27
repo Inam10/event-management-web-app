@@ -19,19 +19,9 @@ eventsData :any;
 
     })
   }
-  // deleteEvent(userData : any)  {
-  //   this.eventDeleteService.deleteEvent(userData).subscribe(
-  //     response =>{
-  //       console.log('delete Event successfully', response);
-  //       this.router.navigate(['dashboard']);
-
-  //     },
-  //     error =>{
-  //       console.log('failed to delete the event' , error);
-  //     }
-  //   )
-    
-  // }
+  gotoTable(){
+    this.router.navigate(['/table'])
+  }
 
   gotoAddevent(){
     this.router.navigate(['/options/book-event'])

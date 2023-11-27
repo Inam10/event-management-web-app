@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List Dashboard</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <ul class="dashboard-list">
+            <li *ngFor="let event of eventsData">
+                <div class="info">
+                    <p class="name">{{event.title}}</p>
+                    <p class="location">{{event.location}}</p>
+                    <p class="date">{{event.date}}</p>
+                </div>
+                <div class="actions">
+                    <button class="update-btn">Update</button>
+                    <button class="delete-btn" (click)="deleteEvent(event.id)">Delete</button>
+                    <!-- (click)="deleteEvent(userData)" -->
+                </div>
+            </li>
+
+            <!-- Additional list items can be added here -->
+        </ul>
+    </div>
+</body>
+
+</html>

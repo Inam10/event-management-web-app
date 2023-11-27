@@ -19,7 +19,7 @@ export class OptionsService {
     return this.http.post(this.addEventUrl, eventData)
   }
 
-  deleteEvent(id: any): Observable<any> {
+  deleteEventById(id: any): Observable<any> {
     return this.http.delete(this.addDeleteEventUrl, id);
   }
 

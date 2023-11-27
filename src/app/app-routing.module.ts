@@ -11,6 +11,7 @@ import { AboutComponent } from './home/about/about.component';
 import { GalleryComponent } from './home/gallery/gallery.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { ProfileComponent } from './options/profile/profile.component';
+import { DeteleUpdateComponent } from './options/detele-update/detele-update.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'table',
+    component: DeteleUpdateComponent
   }
 ];
 
