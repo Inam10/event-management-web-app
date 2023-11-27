@@ -12,21 +12,26 @@ export class UserdashboardComponent {
 
   events = []
 userData: any;
+eventsData :any;
+  constructor(private eventDeleteService : OptionsService, private router: Router, private authService: AuthService, private showEventData :OptionsService)  {
+    this.showEventData.eventData().subscribe((data)=>{
+      this.eventsData=data;
 
-  constructor(private eventDeleteService : OptionsService, private router: Router, private authService: AuthService)  {}
-  deleteEvent(userData : any)  {
-    this.eventDeleteService.deleteEvent(userData).subscribe(
-      response =>{
-        console.log('delete Event successfully', response);
-        this.router.navigate(['dashboard']);
-
-      },
-      error =>{
-        console.log('failed to delete the event' , error);
-      }
-    )
-    
+    })
   }
+  // deleteEvent(userData : any)  {
+  //   this.eventDeleteService.deleteEvent(userData).subscribe(
+  //     response =>{
+  //       console.log('delete Event successfully', response);
+  //       this.router.navigate(['dashboard']);
+
+  //     },
+  //     error =>{
+  //       console.log('failed to delete the event' , error);
+  //     }
+  //   )
+    
+  // }
 
   gotoAddevent(){
     this.router.navigate(['/options/book-event'])

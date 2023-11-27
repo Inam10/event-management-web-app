@@ -38,16 +38,15 @@
 
     <!-- </header> -->
 
-   
+
     <div class="main-container">
         <div class="navcontainer">
             <nav class="nav">
                 <div class="nav-upper-options">
-                  
+
 
                     <div class="nav-option option1">
-                        <img src="../../../assets/icons8-dashboard-48.png"
-                            class="nav-img" alt="dashboard">
+                        <img src="../../../assets/icons8-dashboard-48.png" class="nav-img" alt="dashboard">
                         <h3> Dashboard</h3>
                     </div>
 
@@ -58,20 +57,17 @@
                     </div> -->
 
                     <div class="nav-option option5">
-                        <img src="../../../assets/icons8-male-user-50.png"
-                            class="nav-img" alt="blog">
+                        <img src="../../../assets/icons8-male-user-50.png" class="nav-img" alt="blog">
                         <h3 (click)="gotoProfile()"> Profile</h3>
                     </div>
 
                     <div class="nav-option option6">
-                        <img src="../../../assets/icons8-setting-50.png"
-                            class="nav-img" alt="settings">
+                        <img src="../../../assets/icons8-setting-50.png" class="nav-img" alt="settings">
                         <h3> Settings</h3>
                     </div>
 
                     <div class="nav-option logout" (click)="logout()">
-                        <img src="../../../assets/icons8-logout-50.png"
-                            class="nav-img" alt="logout">
+                        <img src="../../../assets/icons8-logout-50.png" class="nav-img" alt="logout">
                         <h3>Logout</h3>
                     </div>
                 </div>
@@ -92,8 +88,7 @@
                         <h2 class="topic-heading">Add Event</h2>
                     </div>
 
-                    <img src="../../../assets/icons8-add-event-50.png"
-                        alt="Views">
+                    <img src="../../../assets/icons8-add-event-50.png" alt="Views">
                 </div>
 
                 <div class="box box2">
@@ -101,22 +96,22 @@
                         <h2 class="topic-heading">Manage Event</h2>
                     </div>
 
-                     <img src="../../../assets/icons8-event-declined-50.png"> 
+                    <img src="../../../assets/icons8-event-declined-50.png">
                 </div>
 
                 <div class="box box3">
-                    <div class="text" (click)="deleteEvent(userData)">
+                    <!-- (click)="deleteEvent(userData)" -->
+                    <div class="text">
                         <h2 class="topic-heading">Delete Event</h2>
                     </div>
 
-                     <img src="../../../assets/icons8-delete-50.png"
-                        alt="comments">
+                    <img src="../../../assets/icons8-delete-50.png" alt="comments">
                 </div>
             </div>
 
             <div class="report-container">
                 <div class="report-header">
-                    <h1 class="recent-Articles">More Features Coming Soon</h1>
+                    <h1 class="recent-Articles">All Event Details</h1>
                     <!-- <button class="view">View All</button> -->
                 </div>
 
@@ -137,6 +132,61 @@
                         </div>
                     </div>
                 </div> -->
+                <!-- new -->
+                <div class="main">
+
+
+                    <h2>YOUR BOOKED EVENTS</h2>
+                    <br />
+                    <div class="card">
+                        <!-- <div class="card-body">
+                            <i class="fa fa-pen fa-xs edit"></i>
+                            <div class="social-media">
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-invision fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-snapchat fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                        </div> -->
+
+                        <ul class="list">
+                            <li class="list-item" *ngFor=" let event of eventsData">
+                                <div class="item-header">
+                                    <h5>{{event.title}} </h5>
+                                    <span class="item-date">{{event.date}}</span>
+                                </div>
+                                <p>{{event.location}}</p>
+                            </li>
+
+                            <!-- Add more list items as needed -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- End -->
             </div>
         </div>
     </div>
