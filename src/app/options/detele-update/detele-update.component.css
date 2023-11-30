@@ -1,56 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .dashboard {
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  .dashboard-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .dashboard-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
-  
-  .info {
-    flex: 1;
-  }
-  
-  .actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .name {
-    font-weight: bold;
-  }
-  
-  .update-btn,
-  .delete-btn {
-    padding: 8px 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-  }
-  
-  .update-btn {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .delete-btn {
-    background-color: #f44336;
-    color: white;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.dashboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  transition: background-color 0.3s;
+}
+
+.dashboard-list li:hover {
+  background-color: #f9f9f9;
+}
+
+.info {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.name {
+  font-weight: bold;
+  color: #333;
+}
+
+.update-btn,
+.delete-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.update-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
