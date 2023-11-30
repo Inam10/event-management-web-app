@@ -172,6 +172,7 @@ header {
     gap: 50px;
 }
 
+
 .nav {
     min-height: 91vh;
     width: 250px;
@@ -358,12 +359,20 @@ header {
 
 .item1 {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .t-op-nextlvl {
     font-size: 14px;
     letter-spacing: 0px;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Adjust the number of lines to show if needed */
+    -webkit-box-orient: vertical;
 }
 
 .label-tag {
@@ -374,6 +383,18 @@ header {
     border-radius: 4px;
 }
 
+.items .item1 .actions img {
+    width: 20px;
+    /* Adjust the width as needed */
+    height: 20px;
+    /* Adjust the height as needed */
+    cursor: pointer;
+}
+
+.items .item1 .actions img:first-child {
+    margin-right: 10px;
+    /* Adjust the margin as needed to separate the images */
+}
 
 /* Responsive CSS Here */
 @media screen and (max-width: 950px) {

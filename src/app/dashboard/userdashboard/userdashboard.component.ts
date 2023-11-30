@@ -4,10 +4,11 @@ import { AuthService } from 'src/app/services/auth.service';
 import { OptionsService } from 'src/app/services/options.service';
 
 @Component({
-  selector: 'app-userdashboard',
-  templateUrl: './userDashboard.component.html',
-  styleUrls: ['./userDashboard.component.css']
+  selector: 'app-user-dashboard',
+  templateUrl: './userdashboard.component.html',
+  styleUrls: ['./userdashboard.component.css']
 })
+
 export class UserdashboardComponent {
 
   events = []
@@ -36,5 +37,35 @@ export class UserdashboardComponent {
 
   logout() {
     this.router.navigate(['auth/signin'])
+  }
+
+
+  editEvent() {
+    this.router.navigate(['auth/signin'])
+  }
+
+
+  deleteEvent(deleteCurrentEvent: any) {
+    console.info("deleteCurrentEvent", deleteCurrentEvent)
+    this.eventDeleteService
+      .deleteEventById(`${deleteCurrentEvent._id}`)
+      .subscribe((response) => {
+        console.info("deleteCurrentStaffRow._id", deleteCurrentEvent._id)
+        console.log(response)
+        this.GeteventById()
+      });
+  }
+
+  setDeleteEvent(event: any) {
+    console.log('Selected event for deletion:', event);
+    this.deleteEvent(event);
+
+  }
+
+  GeteventById() {
+    this.showEventData.eventData().subscribe(
+      response => {
+        this.eventsData = response;
+      })
   }
 }
