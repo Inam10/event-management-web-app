@@ -8,12 +8,14 @@ import { OptionsService } from 'src/app/services/options.service';
   styleUrls: ['./updateEvent.component.css']
 })
 export class UpdateComponent {
-
   eventsData: any;
-  deleteCurrentEvent: any;
-  event: any;
-
-  constructor(private showEventData: OptionsService, private eventDeleteService: OptionsService) { }
+  updateEventData: any;
+  updatedData: any = {
+    title: '',
+    location: '',
+    date: ''
+  };
+  constructor(private showEventData: OptionsService) { }
   ngOnInit() {
     this.GeteventById()
   }
@@ -28,20 +30,25 @@ export class UpdateComponent {
   }
 
 
-  deleteEvent(deleteCurrentEvent: any) {
-    console.info("deleteCurrentEvent", deleteCurrentEvent)
-    this.eventDeleteService
-      .deleteEventById(`${deleteCurrentEvent._id}`)
+  updateEvent() {
+    console.info("updateCurrentEvent", this.updateEventData);
+
+    // Assuming you want to update only non-empty fields
+    const updatedData = {
+      title: this.updatedData.title || this.updateEventData.title,
+      location: this.updatedData.location || this.updateEventData.location,
+      date: this.updatedData.date || this.updateEventData.date
+    };
+
+    this.showEventData
+      .updateEventById(this.updateEventData._id, updatedData)
       .subscribe((response) => {
-        console.info("deleteCurrentStaffRow._id", deleteCurrentEvent._id)
-        console.log(response)
-        this.GeteventById()
+        console.info("updateCurrentEvent._id", this.updateEventData._id);
+        console.log(response);
+        // Optionally, update the displayed events
+        // this.getEvents();
       });
   }
 
-  setDeleteEvent(event: any) {
-    console.log('Selected event for deletion:', event);
-    this.deleteEvent(event);
 
-  }
 }
