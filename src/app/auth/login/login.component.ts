@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
-import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -15,13 +14,13 @@ export class LoginComponent {
     password: ''
   };
 
-  constructor( private router : Router , private authService : AuthService  ){}
+  constructor(private router: Router, private authService: AuthService) { }
 
-  gotoforgot(){
+  gotoforgot() {
     this.router.navigate(['auth/forgot'])
   }
 
-  gotosignup(){
+  gotosignup() {
     this.router.navigate(['user/signup']);
   };
 
@@ -29,9 +28,9 @@ export class LoginComponent {
     this.authService.login(data).subscribe(
       (response) => {
         console.log('Authentication result:', response);
-        this.router.navigate(['/dashboard']); 
+        this.router.navigate(['/dashboard']);
       }
-     
+
     );
   }
 

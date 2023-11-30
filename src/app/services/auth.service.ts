@@ -10,11 +10,11 @@ export class AuthService {
     throw new Error('Method not implemented.');
   }
 
-  private  apiUrlLogIn = 'http://localhost:3000/users/auth/signin'
+  private apiUrlLogIn = 'http://localhost:3000/users/auth/signin'
   private apiUrlForgot = 'http://localhost:3000/users/forgotPassword';
 
 
-  constructor( private http : HttpClient )  { }
+  constructor(private http: HttpClient) { }
 
   login(userData: any): Observable<any> {
     return this.http.post<any>(this.apiUrlLogIn, userData);

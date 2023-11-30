@@ -15,32 +15,36 @@ import { DeteleUpdateComponent } from './options/detele-update/detele-update.com
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: HomeSectionComponent
   },
   {
     path: 'user/signup',
-    component : SignupComponent
+    component: SignupComponent
   },
   {
     path: 'auth/signin',
-    component : LoginComponent
+    component: LoginComponent
   },
   {
-    path : 'auth/reset',
+    path: 'auth/reset',
     component: ResetComponent
   },
   {
-    path : 'auth/forgot',
-    component : ForgetComponent
+    path: 'auth/forgot',
+    component: ForgetComponent
   },
   {
-    path : 'options/book-event',
-    component : BookEventComponent
+    path: 'options/book-event',
+    component: BookEventComponent
+  },
+  {
+    path: 'options/delete-event',
+    component: DeteleUpdateComponent
   },
   {
     path: 'dashboard',
-    component : UserdashboardComponent
+    component: UserdashboardComponent
   },
   {
     path: 'about',

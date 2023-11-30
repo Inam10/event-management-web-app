@@ -10,14 +10,14 @@ import { Router, NavigationEnd } from '@angular/router';
 export class AppComponent implements OnInit {
     shouldShowNavbar: boolean = true;
 
-    constructor(private router: Router) {}
+    constructor(private router: Router) { }
 
     ngOnInit() {
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
-                this.shouldShowNavbar = !event.url.includes('dashboard') && !event.url.includes('options/book-event') && !event.url.includes('profile');
+                this.shouldShowNavbar = !event.url.includes('options/delete-event') && !event.url.includes('dashboard') && !event.url.includes('options/book-event') && !event.url.includes('profile');
             }
-           
+
         });
     }
 }

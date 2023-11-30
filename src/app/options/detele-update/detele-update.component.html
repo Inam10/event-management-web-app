@@ -15,10 +15,11 @@
                     <p class="location">{{event.location}}</p>
                     <p class="date">{{event.date}}</p>
                 </div>
-                <div class="actions">
-                    <button class="update-btn">Update</button>
-                    <button class="delete-btn" (click)="deleteEvent(event.id)">Delete</button>
-                    <!-- (click)="deleteEvent(userData)" -->
+                <div class="col-6">
+                    <button type="button" class="btn btn-sm btn-danger d-block w-100" data-bs-dismiss="modal"
+                        (click)="deleteEvent('DELETE', event)">
+                        Delete
+                    </button>
                 </div>
             </li>
 

@@ -11,30 +11,30 @@ import { OptionsService } from 'src/app/services/options.service';
 export class UserdashboardComponent {
 
   events = []
-userData: any;
-eventsData :any;
-  constructor(private eventDeleteService : OptionsService, private router: Router, private authService: AuthService, private showEventData :OptionsService)  {
-    this.showEventData.eventData().subscribe((data)=>{
-      this.eventsData=data;
+  userData: any;
+  eventsData: any;
+  constructor(private eventDeleteService: OptionsService, private router: Router, private authService: AuthService, private showEventData: OptionsService) {
+    this.showEventData.eventData().subscribe((data) => {
+      this.eventsData = data;
 
     })
   }
-  gotoTable(){
+  gotoTable() {
     this.router.navigate(['/table'])
   }
 
-  gotoAddevent(){
+  gotoAddevent() {
     this.router.navigate(['/options/book-event'])
   }
 
-  gotoHome(){
+  gotoHome() {
     this.router.navigate(['/'])
   }
-  gotoProfile(){
+  gotoProfile() {
     this.router.navigate(['/profile'])
   }
 
   logout() {
     this.router.navigate(['auth/signin'])
-}
+  }
 }
