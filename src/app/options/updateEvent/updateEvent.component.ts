@@ -4,10 +4,10 @@ import { OptionsService } from 'src/app/services/options.service';
 
 @Component({
   selector: 'app-detele-update',
-  templateUrl: './deleteEvent.component.html',
-  styleUrls: ['./deleteEvent.component.css']
+  templateUrl: './updateEvent.component.html',
+  styleUrls: ['./updateEvent.component.css']
 })
-export class DeteleUpdateComponent {
+export class UpdateComponent {
 
   eventsData: any;
   deleteCurrentEvent: any;

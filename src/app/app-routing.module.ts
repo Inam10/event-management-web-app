@@ -11,7 +11,7 @@ import { AboutComponent } from './home/about/about.component';
 import { GalleryComponent } from './home/gallery/gallery.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { ProfileComponent } from './options/profile/profile.component';
-import { DeteleUpdateComponent } from './options/deleteEvent/detele-update.component';
+import { UpdateComponent } from './options/updateEvent/updateEvent.component';
 
 const routes: Routes = [
   {
@@ -38,10 +38,7 @@ const routes: Routes = [
     path: 'options/book-event',
     component: BookEventComponent
   },
-  {
-    path: 'options/delete-event',
-    component: DeteleUpdateComponent
-  },
+
   {
     path: 'dashboard',
     component: UserdashboardComponent
@@ -64,7 +61,7 @@ const routes: Routes = [
   },
   {
     path: 'table',
-    component: DeteleUpdateComponent
+    component: UpdateComponent
   }
 ];
 

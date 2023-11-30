@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BookEventComponent } from './bookEvent/bookEvent.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
-import { DeteleUpdateComponent } from './deleteEvent/detele-update.component';
+import { UpdateComponent } from './updateEvent/updateEvent.component';
 
 
 
@@ -11,7 +11,7 @@ import { DeteleUpdateComponent } from './deleteEvent/detele-update.component';
   declarations: [
     BookEventComponent,
     ProfileComponent,
-    DeteleUpdateComponent
+    UpdateComponent
   ],
   imports: [
     CommonModule,
