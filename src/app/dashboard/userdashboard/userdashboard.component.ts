@@ -5,8 +5,8 @@ import { OptionsService } from 'src/app/services/options.service';
 
 @Component({
   selector: 'app-userdashboard',
-  templateUrl: './userdashboard.component.html',
-  styleUrls: ['./userdashboard.component.css']
+  templateUrl: './userDashboard.component.html',
+  styleUrls: ['./userDashboard.component.css']
 })
 export class UserdashboardComponent {
 

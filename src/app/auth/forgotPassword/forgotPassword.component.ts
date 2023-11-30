@@ -3,13 +3,13 @@ import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-forget',
-  templateUrl: './forgot.component.html',
-  styleUrls: ['./forgot.component.css']
+  templateUrl: './forgotPassword.component.html',
+  styleUrls: ['./forgotPassword.component.css']
 })
 export class ForgetComponent {
 
   email: string = '';
-  constructor(private forgotPasswordService: AuthService){}
+  constructor(private forgotPasswordService: AuthService) { }
 
   sendResetLink(): void {
     this.forgotPasswordService.sendResetLink(this.email)

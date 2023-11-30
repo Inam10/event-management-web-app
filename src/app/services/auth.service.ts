@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +12,7 @@ export class AuthService {
 
   private apiUrlLogIn = 'http://localhost:3000/users/auth/signin'
   private apiUrlForgot = 'http://localhost:3000/users/forgotPassword';
+  private userByIdUrl = 'http://localhost:3000/users/byId'
 
 
   constructor(private http: HttpClient) { }
@@ -22,5 +23,9 @@ export class AuthService {
 
   sendResetLink(email: string): Observable<any> {
     return this.http.post<any>(this.apiUrlForgot, { email });
+  }
+
+  public findUserById(Id: string): Observable<any> {
+    return this.http.delete(`${this.userByIdUrl}/${Id}`).pipe(map((res) => res));
   }
 }

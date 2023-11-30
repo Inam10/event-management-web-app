@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SignupComponent } from './user/signup/signup.component';
+import { SignupComponent } from './user/signUp/signUp.component';
 import { LoginComponent } from './auth/login/login.component';
-import { ResetComponent } from './auth/reset/reset.component';
-import { ForgetComponent } from './auth/forgot/forgot.component';
-import { UserdashboardComponent } from './dashboard/userdashboard/userdashboard.component';
+import { ResetComponent } from './auth/resetPassword/resetPassword.component';
+import { ForgetComponent } from './auth/forgotPassword/forgotPassword.component';
+import { UserdashboardComponent } from './dashboard/userDashboard/userDashboard.component';
 import { HomeSectionComponent } from './main/home-section/home-section.component';
-import { BookEventComponent } from './options/book-event/book-event.component';
+import { BookEventComponent } from './options/bookEvent/bookEvent.component';
 import { AboutComponent } from './home/about/about.component';
 import { GalleryComponent } from './home/gallery/gallery.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { ProfileComponent } from './options/profile/profile.component';
-import { DeteleUpdateComponent } from './options/detele-update/detele-update.component';
+import { DeteleUpdateComponent } from './options/deleteEvent/detele-update.component';
 
 const routes: Routes = [
   {

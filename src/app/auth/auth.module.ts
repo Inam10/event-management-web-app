@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
-import { ResetComponent } from './reset/reset.component';
+import { ResetComponent } from './resetPassword/resetPassword.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ForgetComponent } from './forgot/forgot.component';
+import { ForgetComponent } from './forgotPassword/forgotPassword.component';
 
 
 

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BookEventComponent } from './book-event/book-event.component';
+import { BookEventComponent } from './bookEvent/bookEvent.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
-import { DeteleUpdateComponent } from './detele-update/detele-update.component';
+import { DeteleUpdateComponent } from './deleteEvent/detele-update.component';
 
 
 
@@ -17,7 +17,7 @@ import { DeteleUpdateComponent } from './detele-update/detele-update.component';
     CommonModule,
     FormsModule
   ],
-  exports:[
+  exports: [
     BookEventComponent,
     ProfileComponent
   ]

@@ -9,7 +9,7 @@ export class OptionsService {
 
 
   private addEventUrl = 'http://localhost:3000/events/addEvent'
-  private addDeleteEventUrl = 'http://localhost:3000/events/deleteEvent'
+  private DeleteEventUrl = 'http://localhost:3000/events/deleteEvent'
   private showEventUrl = 'http://localhost:3000/events/getEvent/'
 
 
@@ -28,6 +28,7 @@ export class OptionsService {
   }
 
   public deleteEventById(Id: string): Observable<any> {
-    return this.http.delete(`${this.addDeleteEventUrl}/${Id}`).pipe(map((res) => res));
+    return this.http.delete(`${this.DeleteEventUrl}/${Id}`).pipe(map((res) => res));
   }
+
 }

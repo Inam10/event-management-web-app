@@ -4,8 +4,8 @@ import { OptionsService } from 'src/app/services/options.service';
 
 @Component({
   selector: 'app-detele-update',
-  templateUrl: './detele-update.component.html',
-  styleUrls: ['./detele-update.component.css']
+  templateUrl: './deleteEvent.component.html',
+  styleUrls: ['./deleteEvent.component.css']
 })
 export class DeteleUpdateComponent {
 
@@ -17,6 +17,7 @@ export class DeteleUpdateComponent {
   ngOnInit() {
     this.GeteventById()
   }
+
 
 
   GeteventById() {
