@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent {
-
+ constructor(private router : Router){}
+ gotoContactUs(){
+  this.router.navigate(['/contact-us'])
+ }
 }
