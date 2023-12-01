@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SignupComponent } from './user/signUp/signUp.component';
+// import { SignupComponent } from './user/signUp/signUp.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ResetComponent } from './auth/resetPassword/resetPassword.component';
 import { ForgetComponent } from './auth/forgotPassword/forgotPassword.component';
@@ -12,6 +12,7 @@ import { GalleryComponent } from './home/gallery/gallery.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { ProfileComponent } from './options/profile/profile.component';
 import { UpdateComponent } from './options/updateEvent/updateEvent.component';
+import { SignupComponent } from './user/signUp/signUp.component';
 
 const routes: Routes = [
   {

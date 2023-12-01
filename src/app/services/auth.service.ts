@@ -13,6 +13,7 @@ export class AuthService {
   private apiUrlLogIn = 'http://localhost:3000/users/auth/signin'
   private apiUrlForgot = 'http://localhost:3000/users/forgotPassword';
   private userByIdUrl = 'http://localhost:3000/users/byId'
+  private apiUrlReset = 'http://localhost:3000/users/forgot-password/resetPassword';
 
 
   constructor(private http: HttpClient) { }
@@ -27,5 +28,9 @@ export class AuthService {
 
   public findUserById(Id: string): Observable<any> {
     return this.http.delete(`${this.userByIdUrl}/${Id}`).pipe(map((res) => res));
+  }
+
+  resetPassord(): Observable<any> {
+    return this.http.get(this.apiUrlReset);
   }
 }

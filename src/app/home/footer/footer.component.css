@@ -15,8 +15,14 @@ footer {
 }
 
 .footer-logo img {
-    width: 100px;
-    height: auto;
+    /* width: 100px;
+    height: auto; */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: start;
+    /* margin-right: 150px; */
+    padding-right: 50px;
 }
 
 .footer-links,
@@ -30,6 +36,7 @@ footer {
 }
 
 .footer-links ul li {
+    color: white;
     margin-bottom: 8px;
 }
 
@@ -86,4 +93,18 @@ footer {
 .logo:hover {
     color: #fff;
     /* Change color on hover to white */
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: red;
+}
+
+.link:active {
+    color: blue;
 }
